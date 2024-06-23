@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <form action="/bmicalculator" method="post">
+            <input type="text" name="weight" placeholder="Weight (kg)" aria-invalid="false" aria-errormessage="msgID" class="weight">
+
+            <input type="text" name="height" placeholder="Height (m)" aria-invalid="false" aria-errormessage="msgID" class="height">
+
+            <span aria-live="off" style="visibility: hidden;" id="msgID">Invalid weight or height</span>
+
+            <input type="submit" value="Calculate BMI" id="checkButton">
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
